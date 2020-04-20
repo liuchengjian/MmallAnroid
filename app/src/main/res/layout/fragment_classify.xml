@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.lchj.mmallanroid.mvp.widgets.HeaderBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isShowBack="false"
+        app:titleText="@string/nav_classify" />
+    <LinearLayout
+        style="@style/MatchMatch.Horizontal"
+        android:background="@color/common_bg">
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/common_white" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/mOneRecyclerView"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/common_bg" />
+
+        <com.kennyc.view.MultiStateView
+            android:id="@+id/multiStateView"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:msv_emptyView="@layout/layout_state_empty"
+            app:msv_errorView="@layout/layout_state_error"
+            app:msv_loadingView="@layout/layout_state_loading"
+            app:msv_viewState="loading">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mTwoRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/common_bg" />
+        </com.kennyc.view.MultiStateView>
+    </LinearLayout>
+
+
+</LinearLayout>

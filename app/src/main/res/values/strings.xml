@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">mmall</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" tools:ignore="ExtraTranslation">Hello blank fragment</string>
+    <string name="nav_header">首页</string>
+    <string name="nav_classify">分类</string>
+    <string name="nav_shop_cart">购物车</string>
+    <string name="nav_my">我的</string>
+
+    <string name="coming_soon_tip">敬请期待~~~</string>
+    <string name="common_complete">完成</string>
+    <string name="common_confirm">确认</string>
+    <string name="common_edit">编辑</string>
+    <string name="common_delete">删除</string>
+    <string name="common_next">下一步</string>
+    <string name="common_save">保存</string>
+    <string name="no_data_tip">暂无数据~~~</string>
+</resources>

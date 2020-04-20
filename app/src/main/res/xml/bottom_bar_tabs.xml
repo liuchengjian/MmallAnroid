@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+
+    <tab
+        activeColor="@color/common_blue"
+        icon="@drawable/icon_home"
+        id="@+id/tab_home"
+        title="@string/nav_header"/>
+    <tab
+        activeColor="@color/common_blue"
+        icon="@drawable/icon_classify"
+        id="@+id/tab_classify"
+        title="@string/nav_classify"/>
+    <tab
+        activeColor="@color/common_blue"
+        icon="@drawable/icon_shop_cart"
+        id="@+id/tab_shop_cart"
+        title="@string/nav_shop_cart"/>
+
+    <tab
+        activeColor="@color/common_blue"
+        icon="@drawable/icon_my"
+        id="@+id/tab_my"
+        title="@string/nav_my"/>
+
+</tabs>

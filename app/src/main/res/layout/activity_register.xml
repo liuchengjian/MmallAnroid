@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MatchMatch.Vertical.Common">
+    <com.lchj.mmallanroid.mvp.widgets.HeaderBar
+        android:id="@+id/mHeaderBar"
+        app:titleText="注册"
+        style="@style/MatchWrap"/>
+    <LinearLayout android:background="@color/common_bg"
+        android:layout_margin="@dimen/common_margin"
+        style="@style/MatchWrap.Vertical">
+        <LinearLayout style="@style/MatchWrap.Horizontal">
+            <EditText android:id="@+id/mUserNameEt"
+                android:background="@null"
+                android:paddingLeft="@dimen/common_padding_small"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_line_height"
+                android:hint="请输入账号"
+                android:drawableLeft="@drawable/icon_user"
+                android:drawablePadding="@dimen/common_padding_small"
+                android:layout_weight="1.0"
+                />
+            <View style="@style/DividerFixedWidth.MarginTopBottom"/>
+            <RadioGroup
+                android:id="@+id/mRadioGroup"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/mRbNoVip"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:text="普通用户"
+                    android:shadowColor="@color/common_blue"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/mRbVip"
+                    android:layout_width="wrap_content"
+                    android:shadowColor="@color/common_blue"
+                    android:text="VIP"
+                    android:layout_height="wrap_content"/>
+            </RadioGroup>
+        </LinearLayout>
+        <View style="@style/DividerFixedHeight"/>
+        <EditText android:id="@+id/mMobileEt"
+            android:background="@null"
+            android:paddingLeft="@dimen/common_padding_small"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:hint="请输入手机号码"
+            android:drawableLeft="@drawable/icon_lock"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:inputType="phone"/>
+        <View style="@style/DividerFixedHeight"/>
+        <EditText android:id="@+id/mEmailEt"
+            android:background="@null"
+            android:paddingLeft="@dimen/common_padding_small"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:hint="请输入邮箱"
+            android:drawableLeft="@drawable/icon_lock"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:inputType="text"
+            />
+        <View style="@style/DividerFixedHeight"/>
+        <EditText android:id="@+id/mPwdEt"
+            android:background="@null"
+            android:paddingLeft="@dimen/common_padding_small"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:hint="请输入密码（6-20位字母或数字）"
+            android:drawableLeft="@drawable/icon_lock"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:inputType="textPassword"/>
+        <View style="@style/DividerFixedHeight"/>
+        <EditText android:id="@+id/mPwdConfirmEt"
+            android:background="@null"
+            android:paddingLeft="@dimen/common_padding_small"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/common_line_height"
+            android:hint="请再次输入密码"
+            android:drawableLeft="@drawable/icon_lock"
+            android:drawablePadding="@dimen/common_padding_small"
+            android:inputType="textPassword"/>
+        <View style="@style/DividerFixedHeight"/>
+        <LinearLayout style="@style/MatchWrap.Horizontal"
+            >
+            <EditText android:id="@+id/mQuestionEt"
+                android:background="@null"
+                android:paddingLeft="@dimen/common_padding_small"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_line_height"
+                android:hint="请输入问题"
+                android:drawableLeft="@drawable/icon_user"
+                android:drawablePadding="@dimen/common_padding_small"
+                android:layout_weight="1.0"
+                />
+            <View style="@style/DividerFixedWidth.MarginTopBottom"/>
+            <EditText android:id="@+id/mAnswerEt"
+                android:background="@null"
+                android:paddingLeft="@dimen/common_padding_small"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/common_line_height"
+                android:hint="请输入答案"
+                android:drawableLeft="@drawable/icon_user"
+                android:drawablePadding="@dimen/common_padding_small"
+                android:layout_weight="1.0"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button android:id="@+id/mRegisterBtn"
+        style="@style/FullBtnStyle"
+        android:text="注册"/>
+</LinearLayout>
